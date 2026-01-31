@@ -1,6 +1,7 @@
 import { View, TextInput, Pressable, Text, StyleSheet } from "react-native";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import theme from "../theme";
 
 const validationSchema = yup.object().shape({
   username: yup.string().required("Username is required"),
@@ -59,6 +60,7 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   input: {
+    fontFamily: theme.fonts.main,
     borderWidth: 1,
     borderColor: "#ccc",
     borderRadius: 5,
@@ -82,6 +84,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonText: {
+    fontFamily: theme.fonts.main,
     color: "white",
     fontSize: 16,
     fontWeight: "bold",

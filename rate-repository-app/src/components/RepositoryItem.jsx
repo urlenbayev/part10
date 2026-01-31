@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import StatItem from "./StatItem";
+import theme from "../theme";
 
 export default function RepositoryItem({ item }) {
   return (
@@ -42,11 +43,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   fullName: {
+    fontFamily: theme.fonts.main,
     fontWeight: "bold",
     fontSize: 16,
     marginBottom: 5,
   },
   description: {
+    fontFamily: theme.fonts.main,
     color: "#586069",
     marginBottom: 5,
   },
@@ -58,6 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   languageText: {
+    fontFamily: theme.fonts.main,
     color: "white",
   },
   statsRow: {

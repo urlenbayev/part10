@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 import Constants from "expo-constants";
 import { Link } from "react-router-native";
+import theme from "../theme";
 
 const styles = StyleSheet.create({
   container: {
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   tabText: {
+    fontFamily: theme.fonts.main,
     color: "white",
     fontSize: 16,
     fontWeight: "bold",

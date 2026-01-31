@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import theme from "../theme";
 
 const formatCount = (count) => {
   if (count >= 1000) {
@@ -18,10 +19,12 @@ export default function StatItem({ count, label }) {
 
 const styles = StyleSheet.create({
   statCount: {
+    fontFamily: theme.fonts.main,
     fontWeight: "bold",
     fontSize: 16,
   },
   statLabel: {
+    fontFamily: theme.fonts.main,
     color: "#586069",
   },
 });
